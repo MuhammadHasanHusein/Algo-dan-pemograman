@@ -1,0 +1,16 @@
+# praktikum 2
+
+"""
+Nama Muhammad Hasan Husein
+NIM : 065002100009
+prodi : Sistem Informasi
+Date : 23 september 2021
+Matkul : Algo dan pemograman
+"""
+print ("hitung luas ruangan")
+q=float(input( "masukkan panjang ruangan: "))     
+r=float(input ( "masukkan lebar ruangan: "))
+debi=input('masukkan satuan (meter/inci): ')
+
+luas= q*r
+print ("luas ruangan dengan panjang", q, "dan lebar", r,' adalah :', luas, debi)
