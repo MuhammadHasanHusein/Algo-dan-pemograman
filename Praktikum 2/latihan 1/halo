@@ -1,0 +1,33 @@
+# Tugas Praktikum 2
+
+"""
+Nama Muhammad Hasan Husein
+NIM : 065002100009
+prodi : Sistem Informasi
+Date : Senin, 27092021
+Matkul : Algo dan pemograman 
+
+"""
+#latihan1 
+
+print ('wello hello people')
+print('im Muhammad Hasan Husein')
+print ('ini adalah program perhitungan integer')
+
+a=float(input('masukkan nilai a :'))
+b=float(input('masukkan nilai b :'))
+
+penjumlahan = a+b
+selisih = a-b
+perkalian = a*b
+sisa = a%b
+pembagian = a/b
+pangkat =a**b
+import math
+print ('penjumlahan a ditambah b adalah ',penjumlahan)
+print ("selisih a dikurang b adalah", selisih)
+print ('perkalian a dikali b', perkalian)
+print ('pembagian a dibagi b ' , pembagian)
+print ('jumlah sisa pembagian dari hasil a dibagi b adalah', sisa)
+print ('hasil a pangkat b', pangkat)
+print (' hasil dari log (a) adalah : ' , (math.log10(a)))
