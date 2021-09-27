@@ -25,7 +25,7 @@ pembagian = a/b
 pangkat =a**b
 import math
 print ('penjumlahan a ditambah b adalah ',penjumlahan)
-print ("selisih a dikurang b adalah", selisih)
+print ("selisih a dikurang b adalah", abs (a-b))
 print ('perkalian a dikali b', perkalian)
 print ('pembagian a dibagi b ' , pembagian)
 print ('jumlah sisa pembagian dari hasil a dibagi b adalah', sisa)
