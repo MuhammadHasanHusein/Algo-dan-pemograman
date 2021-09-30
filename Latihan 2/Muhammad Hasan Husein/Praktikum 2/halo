@@ -1,0 +1,25 @@
+# Latihan ke 2
+
+"""
+Nama : Muhammad Hasan Husein
+Prodi : Sistem Informasi
+NIM : 065002100009
+date: Kamis, 30092021
+"""
+
+print ("hello again guys")
+print ("welcome back to my program")
+print ("this is a program who count the distance")
+
+l1 = float(input("maukkan latitude kota pertama :"))
+t1 = float(input("masukkan longittude kota pertama :"))
+l2 = float(input("masukkan latitude kota kedua :"))
+t2 = float(input("masukkan longittude kota kedua :"))
+
+import math
+a = math.pow(math.sin(l2-l1/2),2)+ math.cos(l1)*math.cos(l2)*math.pow(math.sin(t2-t1/2),2)
+c = 2*math.atan2 (math.sqrt (a), math.sqrt(1-a))
+R = 6.371 
+d = R * c
+
+print ("jarak antara dua titik kota adalah", d, "kilometer")
