@@ -11,15 +11,21 @@ print ("hello again guys")
 print ("welcome back to my program")
 print ("this is a program who count the distance")
 
+import math as m
 l1 = float(input("maukkan latitude kota pertama :"))
 t1 = float(input("masukkan longittude kota pertama :"))
 l2 = float(input("masukkan latitude kota kedua :"))
 t2 = float(input("masukkan longittude kota kedua :"))
 
-import math
-a = math.pow(math.sin(l2-l1/2),2)+ math.cos(l1)*math.cos(l2)*math.pow(math.sin(t2-t1/2),2)
-c = 2*math.atan2 (math.sqrt (a), math.sqrt(1-a))
-R = 6.371 
-d = R * c
+R = 6371.01
+y1 = m.radians(l1)
+x1 = m.radians(t1)
+y2 = m.radians(l2)
+x2 = m.radians(t2)
+y= y2-y1
+x= x2-x1
+a = m.pow(m.sin(y/2),2)+m.cos(y1)*m.cos(y2)*m.pow(m.sin(x/2),2)
+c = 2*m.atan2(m.sqrt(a),m.sqrt(1-a))
+d = R*c
 
 print ("jarak antara dua titik kota adalah", d, "kilometer")
