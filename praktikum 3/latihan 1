@@ -1,0 +1,23 @@
+#praktikum 3 Latihan 1
+"""
+Creator : Muhammad Hasan Husein
+Prodi : Sistem Informasi
+Date : Senin, 04102021
+Matkul : Algo dan Pemograman
+"""
+a = int(input("masukkan panjang sisi a :"))
+b = int(input("masukkan panjang sisi b :"))
+c = int(input("masukkan panjang sisi c :"))
+
+
+
+if ( a==b==c):
+    print ("ini termasuk segitiga sama sisi")
+elif (a==b or b!=c or c!=a):
+    print ("ini termasuk segitiga sama kaki")
+else :
+    if (a+b<=c) or (a+c<=b) or (b+c<=a) :
+        print ("ini bukan segitiga")
+    else :
+            print ("ini segitiga sembarang")
+  
