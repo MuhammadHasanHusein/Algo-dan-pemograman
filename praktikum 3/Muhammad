@@ -1,0 +1,47 @@
+# praktikum 3 latihan 2
+"""
+Creator : Muhammad Hasan Husein
+Matkul : Algo dan Pemograman
+Prodi : Sistem Informasi
+Date : Friday, 08102021
+"""
+
+print ("bentuk persamaan kuadrat")
+import math as m
+a = int(input("masukkan nilai a :"))
+b = int(input("masukkan nilai b :"))
+c = int(input("masukkan nilai c :"))
+D = ( b**2) - (4*a*c)
+
+if (a==0) :
+    print ("bukan persamaan kuadrat")
+elif D > 0 :
+          x1 = (-b +m.sqrt(D))/(2*a)
+          x2 = (-b -m.sqrt(D))/(2*a)
+          print ("persamaan kuadrat ", a, "x^2 +", b, "x +", c)
+          print ("determinan =", D)
+          print ("memiliki akar berbeda")
+          print ("akar x1 =", x1)
+          print ('akar x2 =', x2)
+elif D == 0 :
+         x1 = (-b/(2*a))
+         x2 = (-b/(2*a))
+         print ("persamaan kuadrat ", a, "x^2 +", b, "x +", c)
+         print ("determinan =", D)
+         print ("merupakan akar kembar")
+         print ("akar", x1)
+elif D<0 :
+        print ("persamaan kuadrat ", a, "x^2 +", b, "x +", c)
+        print ("determinan =", D)
+        print ("merupakan akar imajiner")
+        print ( -b , "+ akar ", D,"/ 2*", a)
+        print ( -b , "- akar ", D,"/ 2*", a)
+    
+         
+         
+          
+          
+          
+
+
+
