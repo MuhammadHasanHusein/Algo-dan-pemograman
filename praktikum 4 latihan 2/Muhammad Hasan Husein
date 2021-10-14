@@ -1,0 +1,46 @@
+# praktikum 4 latihan 2
+
+"""
+Nama : Muhammad Hasan Husein
+Prodi : Sistem Informasi
+Matkul : Algo dan Pemograman
+NIM : 065002100009
+Date : Kamis, 14102021
+"""
+
+print ("hello world")
+print ("welcome to my program people")
+
+x,y,z = 0,0,0
+while  (x>-3) :
+    x+=x 
+    x = int(input("enter the month you want :"))
+    if (x>=13) or (x<=0) and not (x==-1) :
+        print ("enter the month that correct! ")
+        print ("tab a button -1 to stop the program")
+    elif (x ==1 or x==3 or x==5 or x==7 or x==8 or x==10 or x==12):
+        print ("this month has 31 days ")
+        print ("tab a button -1 to stop the program")
+    elif (x==2):
+        y = int(input("enter the year that you want : "))
+        if (y%4==0) and (x==2) :
+            print ("this month has 29 days")
+            print ("tab a button -1 to stop the program")
+        else : 
+            print("this month has 28 days")
+            print ("tab a button -1 to stop the program")
+    elif (x==4 or x==6 or x==9 or x==11 ) :
+        print ("this month has 30 days")
+        print ("tab a button -1 to stop the program")
+    if (x==-1):
+        print ("this program is stop")
+        print ("thanks for using this program, if you wanna use this program again, you should buy a license")
+        break ;
+        
+            
+    
+            
+        
+        
+        
+
