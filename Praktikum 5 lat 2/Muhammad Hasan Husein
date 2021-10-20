@@ -1,0 +1,54 @@
+#  praktikum 5 latihan 2
+
+"""
+creator by : Muhammad Hasan Husein
+Prodi : Sistem Informasi
+Matkul : Algo dan pemograman
+NIM : 065002100009
+Date : Wednesday, 20-10-2021
+"""
+print ("well hello people")
+print("this is a program entry ticket and the price of an entry ticket")
+
+
+
+
+n = '0'
+
+runningTotal = 0
+
+
+
+
+while (n != ''):
+    variable = float(input("masukkan umur :"))
+    
+    if (variable == 0):
+        break ;
+        
+    elif (variable <=2):
+        print ("gratis")
+        runningTotal +=0
+        print ("total harga tiket :", runningTotal)
+        
+    elif (variable >= 3) and (variable <=12):
+        print ("harga tiket = $14.00")
+        runningTotal += 14.00
+        print ("total harga tiket", runningTotal)
+        
+    elif (variable >= 65):
+        print ("harga tiket = $18.00")
+        runningTotal += 18.00
+        print ("total harga tiket", runningTotal)
+        
+    else :
+        print ("harga tiket = $23.00")
+        runningTotal += 23.00
+        print ("total harga tiket", runningTotal)
+        
+pay = float(input("masukkan jumlah uang berapa :"))
+if (pay < runningTotal):
+     print ("your money is not enough, you should pay : ", runningTotal)
+elif (pay >= runningTotal):
+    print ("cashback", pay-runningTotal, '$') 
+    print ("thanks for using this program, if u wanna use this program again you should buy a license")
