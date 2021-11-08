@@ -1,0 +1,32 @@
+"""
+Nama : Muhammad Hasan Husein
+Prodi : Sistem Informasi
+NIM : 065002100009
+Matkul : Algo dan pemograman
+Date : senin, 08 November 2021
+"""
+print ("well hello guys")
+print ("menentukan bilangan prima atau tidak")
+batman=False
+def prima(angka):
+    if (angka==2 or angka==3 or angka==5 or angka==7) or (angka % 2 != 0 and angka % 3 != 0 and angka % 5 != 0 and angka % 7 != 0):
+        print(angka,"termasuk bilangan prima ya guys")
+    else:
+        NonPrima(angka)
+
+
+
+def NonPrima(angka):
+    if angka>=1:
+        for i in range(2, angka):
+            if (angka % i)==0:
+                print(angka,"ini bukan bilangan prima ya guys")
+                print("because",i,"x",angka//i,"hasilnya adalah",angka)
+                break
+            else:
+                ("")
+    else:
+        print("eror")
+
+pilot=int(input("masukan nilai:"))
+prima(pilot)
