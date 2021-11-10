@@ -1,0 +1,57 @@
+date : Wedensday, 10 November 2021
+nama : Muhammad Hasan Husein
+NIM : 065002100009
+Matkul : Algo dan Pemograman
+praktikum 7 Latihan 2
+
+@author: Muhammad Hasan Husein
+
+"""
+
+print ("yooo A team")
+print ("balik lagi di channel terkece")
+
+
+T = False
+
+
+        
+def pertama (x):
+    if x%10 == 1 and not x in [11]:
+        print (x, "st")
+    else :
+        keempat (x)
+    
+def kedua (x):
+    if x%10== 2 and not x in [12] :
+        print (x, "nd")
+    else :
+        keempat (x)
+        
+def ketiga (x):
+    if x%10== 3 and not x in [13]:
+        print (x, "rd")
+    else :
+        keempat (x)
+
+def keempat (x):
+    if x%10>=4 or x%10==0 or x in [11,12,13]:
+        print (x, "th")
+    else :
+        if x%10==1:
+            pertama (x)
+        elif x%10==2:
+            kedua (x)
+        elif x%10==3:
+            ketiga (x)
+            
+while not T :
+    print ("tekan tombol 0 untuk menghentikan program ini")
+    x = int(input("masukkan angka :"))
+    if x == 0:
+        print (x, "th")
+        T = True
+    else :
+        keempat (x)
+            
+print ("thank you for using this program, if you wanna use this program again, you should buy a license")
