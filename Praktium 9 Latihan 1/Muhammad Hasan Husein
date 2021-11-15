@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 13:27:36 2021
+
+@author: Muhammad Hasan Husein
+praktikum 9 latihan 1
+NImM : 065002100009
+Prodi : Sistem Informasi
+"""
+
+print ("yo guys yo")
+print ('ini fungsi penjumlahan tau')
+
+def jumlah (a = 0, jml = 0 ,i = 1):
+   if (jml <=0):
+       hasil =0
+       return hasil
+   else :
+         a = int(input("masukkan bilangan ke-" + str(i) + ":"))
+         if (jml ==1):
+             return a
+         else :
+             i+=1
+             hasil = a + jumlah (a, jml-1, i)
+             return hasil
+avg = int(input('masukkan jumlah :'))
+nilai = jumlah (jml=avg)
+print ("hasil dari penjumlahan ada;ah :"+ str(nilai))      
+        
