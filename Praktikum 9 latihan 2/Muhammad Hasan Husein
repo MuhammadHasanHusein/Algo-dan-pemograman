@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 20 19:53:34 2021
+
+@author: Muhammad Hasan Husein
+NIM : 065002100009
+Prodi : Sistem Informasi
+Praktikum 9 Latihan 2
+"""
+
+print ("hello guys")
+print (" ini adalah program menghitung bilangan berpangkat")
+print ("jangan lupa subscribe ya guys biar saya kaya")
+
+def sqrt(bilangan,angka) :
+    if bilangan == 1:
+        return 1 
+    elif bilangan == 0:
+        return 0
+    else :
+        if bilangan == 1:
+            return bilangan
+        elif angka == 0:
+            return 1
+        elif bilangan> 1 :
+            return bilangan * sqrt(bilangan,angka-1)
+        elif angka < 0 :
+            return 1/bilangan * sqrt(bilangan,angka-1)
+        else :
+            print("data invalid")
+def memasukkan(x=0,y=0):
+    print("yo guys kalian memasuki program perpangkatan silahkan belajar ya")
+    x=int(input("masukan angka:"))
+    y=int(input('masukan pangkat:'))
+    hasil = sqrt(bilangan = x,angka = y)
+    print("hasil dari ",x,"pangkat",y,"adalah :",hasil)
+    end()
+
+def end():
+    a=input("ketik enter jika mau program ini terhenti:" "ketik lanjut jika mau melanjutkan program ini:")
+    if a == "enter":
+        print("terimakasih telah menggunakan program ini, semoga aku dan kalian semua termasuk orang kaya")
+    elif a == "lanjut" :
+        memasukkan ()
+    else :
+        print("invlalid nih datanya, coba masukin data lagi yang bener")
+        end()
+memasukkan()
+
