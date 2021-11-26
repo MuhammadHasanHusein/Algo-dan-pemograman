@@ -1,0 +1,31 @@
+"""
+Created on Friday 26 November 2021
+
+@author: Muhammad Hasan Husei
+"""
+def x ():
+    p = open("Text", "w")
+    p.write (data)
+    p.close ()
+    
+def y () :
+    p = open("Text", "r")
+    txt = p.read()
+    print (txt)
+    p.close()
+    
+print ("ini program biodata ya guys ya")
+
+a = input("namamu :")
+b = input ("Umurmu :")
+c = input ("alamatmu :")
+d = input("dosen wali :")
+e = input("emailmu :")
+
+data = "Namamu : {}\nUmur: {}\nAlamatmu : {}\ndosen :{}\nemailmu {}"  .format (a,b,c,d,e)
+print ('')
+x ()
+print ("biodatamu :")
+y ()
+    
+
