@@ -1,0 +1,65 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 30 07:36:35 2021
+NIM : 06500210009
+@author: Muhammad Hasan Husei
+"""
+
+def write (data):
+    a = open (NamaFile+".txt","w")
+    a.write(data)
+    a.close()
+
+def read ():
+    a = open (NamaFile+".txt","r")
+    print(a.read())
+    a.close()
+    
+def append(data):
+    a = open (NamaFile+".txt","a")
+    a.write(data)
+    a.close()
+
+y = False 
+
+while (not y ):
+    try:
+        print('this is a porgram file handling')
+        print("1. make and write the file")
+        print("2.read the file")        
+        print("3.Menambahkan Teks Pada File")
+        print("4.Program Terhenti")
+        print("")
+        a = int(input("Masukkan pilihan angka(1/2/3/4):"))
+        if a == 4:
+            y = True
+            print("thanks for using this program, i hope youre doing fine.")
+        elif a == 1:
+            NamaFile = input("Masukkan nama file:")
+            Name = input("Masukkan namamu:")
+            m = int(input("Masukkan NIM-mu:"))
+            tahun = int(input("Masukkan tahun angkatanmu:"))
+            data = "Nama:{}\nNim:{}\nAngkatan:{}".format(Name,m,tahun)
+            write(data)
+            print("\n\nfile berhasil dibuat, Selamat ya!\n\n")
+        elif a == 2:
+            namafile = input("Masukkan nama file:")
+            print("")
+            read()
+            print("")
+        elif a == 3:
+            NamaFile = input("Masukkan nama file:")
+            Name=input("Masukkan nama sahabat mu:")
+            notes=input("Masukkan catatan tambahan:")
+            data = "\nNama sahabatmu:{}\ncatatan:{}".format(Name,notes)
+            print("")
+            append(data)
+            print("\n\nfile berhasil ditambahkan, Selamat ya!\n\n")
+        else :
+            print ("Angka tidak tersedia, silahkan masukan angka yang tersedia")
+            print("")
+
+    except ValueError:
+        print("Masukkan data kembali")
+    except FileNotFoundError:
+        print("nama file yang anda masukan tidak ditemukan\n")
