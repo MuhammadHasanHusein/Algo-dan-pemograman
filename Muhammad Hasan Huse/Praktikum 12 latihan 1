@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 13:40:31 2021
+
+@author: Muhammad Hasan Huseim
+NIM : 065002100009
+"""
+class Mahasiswa:
+    MahaCount= 0
+    
+    def __init__(self, namaMahasiswa,nim, tahunAngkatan):
+        self.namaMahasiswa = namaMahasiswa
+        self.nim= nim
+        self.tahunAngkatan = tahunAngkatan
+        Mahasiswa.MahaCount += 1
+        
+    def printMaha(self):
+        print("Namamu sopo  : " +self.namaMahasiswa)
+        print ("NIM :" +str(self.nim))
+        print ("Tahun angkatan :" +str(self.tahunAngkatan))
+
+namaMahasiswa =input("masmuka :")
+nim =str(input("NIM :"))
+tahunAngkatan = str(input("Angkatan berapa? :"))
+
+student = Mahasiswa(namaMahasiswa,nim,tahunAngkatan)
+student.printMaha()
