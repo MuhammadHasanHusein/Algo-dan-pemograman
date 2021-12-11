@@ -1,0 +1,76 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 11 16:53:13 2021
+Praktikum 12 latihan 2
+@author: Muhammad Hasan Husei
+NIM :065002100009
+"""
+class Mahasiswa:
+    def __init__ (self,NamaMahasiswa,NilaiMahasiswa):
+        self.NamaMahasiswa = NamaMahasiswa
+        self.NilaiMahasiswa = NilaiMahasiswa
+    def Maha (self):
+        print ("Nama :" +self.NamaMahasiswa)
+        print ("Nilai :" +str(self.NilaiMahasiswa))
+        
+a = False
+
+while not a:
+    try :
+        print ("~~~ Program OOP ~~~")
+        print ("1. Mendeklarasikan Objek")
+        print ("2. Menampilkan Objek")
+        print ("3. Mengubah Nilai Objek")
+        print ("4. Menghapus Objek")
+        print ("5. Keluar dari Porgram")
+        print ("")
+        choose = int(input("Masukkan pilihan berupa angka (1/2/3/4/5) :"))
+    
+        if (choose == 1):
+            name = input("Namamu :")
+            nilai = input("Nilaimu :")
+            maha1= Mahasiswa(name,nilai)
+            print ("data berhasil ditambahkan\n")
+        
+        elif (choose ==2):
+            maha1=Mahasiswa(name, nilai)
+            maha1.Maha()
+            print ('\n')
+        
+        elif (choose ==3):
+            choose2 = input("apa yang ingin diubah (Nama/Nilai) :")
+            if choose2=='Nama':
+                name =input("Masukkan namamu :")
+                print ("data berhasil diubah\n")
+            if choose2=='Nilai':
+                nilai=input("masukkan nilaimu :")
+                print("data berhasil diubah\n")
+    
+        elif (choose==4):
+            print ("data berhasil dihapus")
+            name = 'tidak ada nama'
+            nilai = "tidak ada nilai"
+        elif (choose ==5):
+            a=True
+            print("Thank you for using this program")
+        
+        else  :
+            print ("angka yang kamu masukkan tidak tersedia, silahkan masukkan angka yang tersedia")
+            print ("")
+        
+    except ValueError:
+          print("silahkan masukkan angka yang benar!!\n")
+  
+
+
+            
+            
+        
+
+
+
+    
+        
+        
+
+
