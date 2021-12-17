@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 17 09:29:07 2021
+NIM : 065002100009
+@author: Muhammad Hasan Husein
+"""
+
+# dataset
+import pandas as pd
+df = pd.read_csv("Negara.csv")
+mean = df.groupby(["Benua"]).mean ()
+std = df.groupby(["Benua"]).std()
+print (df)
+print (mean)
+print (std)
